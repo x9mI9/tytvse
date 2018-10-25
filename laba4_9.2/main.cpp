@@ -23,7 +23,7 @@ int accumulate ( int* first, int* last)
 
 int main()
 {
-    int arr[5] {1,2,3,3,5};
+    int arr[5] {1,2,-3,3,5};
     cout << max(arr,5) << endl;
    cout << accumulate(arr,arr+max(arr,5));
     return 0;

@@ -19,7 +19,7 @@ int find_max_abs(int* arr, int size)
 
     int main()
     {
-        int arr[7] {1,1,2,3,1,-7,5};
+        int arr[7] {1,1,2,-13,-10,-7,5};
         cout << find_max_abs(arr,7) << endl;
         return 0;
     }

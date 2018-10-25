@@ -32,9 +32,9 @@ int accumulate(int* first, int* last)
 
 int main()
 {
-    int arr[5] {1,-2,-4,3,5};
-    cout << find_positiv1(arr,5,f) << endl;
-    cout << find_positiv2(arr,5,f) << endl;
-    cout<< accumulate(arr+find_positiv1(arr,5,f),arr+find_positiv2(arr,5,f)) << endl;
+    int arr[10] {1,-2,-3,-4,-5,-6,-7,8,9,10};
+    cout << find_positiv1(arr,10,f) << endl;
+    cout << find_positiv2(arr,10,f) << endl;
+    cout<< accumulate(arr+find_positiv1(arr,10,f),arr+find_positiv2(arr,10,f)) << endl;
     return 0;
 }

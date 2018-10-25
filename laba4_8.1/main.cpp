@@ -11,7 +11,7 @@ int f(int* arr,int size)
 }
 int main()
 {
-    int arr[5] {1,-2,3,4,5};
+    int arr[5] {1,-2,-3,-4,5};
     cout << f(arr,5) << endl;
     return 0;
 }

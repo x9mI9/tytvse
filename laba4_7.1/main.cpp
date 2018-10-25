@@ -1,51 +1,17 @@
 #include <iostream>
-#include <windows.h>
+
 using namespace std;
-
-void printArr(int arr[], int len)
+int c1 (int* arr, int c, int size)
 {
-    for(int i=0;i<len;i++)
-        cout << arr[i] << " ";
-    cout << endl;
+int counter = 0;
+for (int i=0; i<size; ++i)
+    if (arr[i]>c)
+    counter++;
+return counter;
 }
-
-void fillArr(int arr[], int len)
-{
-    for(int i=0;i<len;i++)
-    {
-        arr[i] = rand()%10+1;
-    }
-}
-
-int findMax(int arr[],int len)
-{
-    int max = arr[0];
-    int index = 0;
-    for(int i=0;i<len;i++)
-    {
-        if(max<arr[i])
-        {
-            max = arr[i];
-            index = i;
-        }
-    }
-    return index;
-}
-
 int main()
 {
-    int *arr;
-    int res = 1;
-    int size;
-    cout << "Enter array size: ";
-    cin >> size;
-    arr = new int[size];
-    fillArr(arr,size);
-    for(int i=findMax(arr,size)+1;i<size;i++)
-    {
-        res = res*arr[i];
-    }
-    printArr(arr,size);
-    cout << "res = " << res << endl;
+int arr[5] {1,2,3,4,5};
+cout << c1(arr, 1, 5);
     return 0;
 }

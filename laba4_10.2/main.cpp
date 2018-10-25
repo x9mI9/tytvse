@@ -35,9 +35,10 @@ int accumulate (int* first, int* last)
         temp*=(*first);
     return temp;
 }
+
 int main()
 {
-    int arr[5] {8,-7,-5,-2,-5};
+    int arr[5] {10,-70,-9,-3,-5};
     cout << find_max_abs(arr,5) << endl;
     cout << find_min_abs(arr,5) << endl;
     cout << accumulate(arr+find_max_abs(arr,5)+1, arr+find_min_abs(arr,5)) << endl;

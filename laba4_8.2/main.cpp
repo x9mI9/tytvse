@@ -8,7 +8,7 @@ bool f(int a)
 }
 int f1(int* arr, int size, UP p)
 {
-    for( ; size>0; --size)
+    for( ; size>-1; --size)
      if (p(arr[size]))
      return size;
 }

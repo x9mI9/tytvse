@@ -18,7 +18,7 @@ int find_if(int* arr, int size, UP p)
 }
 int find_if1(int* arr, int size, UP p)
 { --size;
-    for ( ; size>0;--size)
+    for ( ; size>-1;--size)
     {
         if (p(arr[size]))
     {

@@ -11,12 +11,13 @@ for (int i=1;i<size; ++i )
         {
         max_element=arr[i];
         max_index=i;
-        return max_element;
+
 }
+return max_index;
 }
 int main()
 {
-    int arr[10] {-2,-2,-3,-4,-5,-6,-7,-8,9,-10};
+    int arr[10] {1,2,3,4,5,6,7,8,9,10};
     cout << find_max(arr,10) << endl;
     return 0;
 }

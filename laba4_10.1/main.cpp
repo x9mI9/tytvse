@@ -6,7 +6,7 @@ bool f(int a)
 {
     return a>0;
 }
-int kolya_kak_mather(int* arr,int size, UP p)
+int find_max_positive(int* arr,int size, UP p)
 {
  int temp=0;
  for (int i=0;i<size;++i)
@@ -16,7 +16,7 @@ int kolya_kak_mather(int* arr,int size, UP p)
 }
 int main()
 {
-    int arr[5]{1,-2,3,-4,5};
-    cout << kolya_kak_mather(arr, 5,f) << endl;
+    int arr[5]{1,2,3,4,5};
+    cout << find_max_positive(arr, 5,f) << endl;
     return 0;
 }
